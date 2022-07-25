@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Button from "@mui/material/Button";
 import "./styles/Description.css";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 class Description extends Component {
   constructor() {
@@ -39,15 +40,23 @@ class Description extends Component {
 
     return (
       <div>
-        <h4>Description</h4>
+        <h4 id="about">ABOUT ME</h4>
         <div>
           <p className="current" onClick={this.beginEdit}>
             {current}
           </p>
           <form className="inactive" onSubmit={this.finishEdit}>
-            <textarea onChange={this.handleChange}></textarea>
-            <Button variant="outlined" type="submit">
-              Finish
+            <TextField
+              id="descrip-field"
+              onChange={this.handleChange}
+              label="What makes you, you?"
+              multiline
+              maxRows={2}
+              minRows={2}
+              variant="filled"
+            ></TextField>
+            <Button type="submit" variant="outlined">
+              FINISH
             </Button>
           </form>
         </div>

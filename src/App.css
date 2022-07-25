@@ -1,8 +1,18 @@
 #app {
   background-color: white;
-  width: 70%;
-  height: 100%;
+  width: 65%;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }

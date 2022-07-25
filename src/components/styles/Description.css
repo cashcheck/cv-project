@@ -1,29 +1,39 @@
-.inactive {
-  display: none;
+#about {
+  margin-left: 95px;
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
+#descrip-field {
+  padding: none;
+  font-size: 0.8rem;
 }
 
 .current {
   width: 80%;
-  height: 500px;
+  height: auto;
   margin: auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.inactive {
+  display: none;
+}
+
+.current:hover {
+  background-color: #f8f8f8;
 }
 
 form {
   margin: auto;
   width: 80%;
-  height: 500px;
+  height: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+}
+
+Button {
+  width: 4rem;
 }

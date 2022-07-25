@@ -1,0 +1,23 @@
+.name {
+  font-size: 4rem;
+  margin-bottom: 0;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.name:hover {
+  background-color: #f8f8f8;
+}
+
+#nameForm {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 64px;
+}
+
+.inactive {
+  display: none !important;
+}

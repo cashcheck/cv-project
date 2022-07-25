@@ -13,6 +13,7 @@ class App extends Component {
       <div id="app">
         <Personal />
         <Description />
+        <div className="columns"></div>
       </div>
     );
   }

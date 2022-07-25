@@ -1,0 +1,15 @@
+#Personal {
+  margin-left: 85px;
+}
+
+#infoContainer {
+  display: flex;
+  gap: 100px;
+  margin: 0;
+}
+
+.info {
+  margin: 0;
+  padding: 10px;
+  color: gray;
+}
