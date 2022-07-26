@@ -15,7 +15,11 @@ function SchoolOverview(props) {
         <div className="school-info">
           <div className="sub-info">
             <h6>{school.school}</h6>
-            <DeleteIcon className="pointer" />
+            <DeleteIcon
+              className="pointer"
+              onClick={props.handleDelete}
+              value={school.school}
+            />
           </div>
           <p>{school.degree}</p>
         </div>

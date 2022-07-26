@@ -20,6 +20,7 @@ class Schooling extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.beginEdit = this.beginEdit.bind(this);
     this.finishEdit = this.finishEdit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleChange(e) {
@@ -31,6 +32,15 @@ class Schooling extends Component {
         [e.target.name]: value,
       },
     }));
+  }
+
+  handleDelete(e) {
+    const deletedSchool = e.target.parentNode.previousSibling.textContent;
+    console.log(deletedSchool);
+    this.setState({
+      all: this.state.all.filter((school) => school.school !== deletedSchool),
+      add: this.state.add,
+    });
   }
 
   beginEdit(e) {
@@ -46,14 +56,10 @@ class Schooling extends Component {
 
   finishEdit(e) {
     e.preventDefault();
-    console.log(this.state.add);
-    if (this.state.next !== "") {
-      this.setState((prevState) => ({
-        all: prevState.all.concat(prevState.add),
-        add: { school: "", degree: "" },
-      }));
-    }
-    console.log(this.state.all);
+    this.setState((prevState) => ({
+      all: prevState.all.concat(prevState.add),
+      add: { school: "", degree: "" },
+    }));
     e.target.classList.toggle("inactive");
     e.target.previousSibling.classList.toggle("inactive");
   }
@@ -63,7 +69,10 @@ class Schooling extends Component {
       <div id="Schooling">
         <h4>SCHOOLING</h4>
         <div id="timeline">
-          <SchoolOverview schools={this.state.all} />
+          <SchoolOverview
+            schools={this.state.all}
+            handleDelete={this.handleDelete}
+          />
           <Button
             variant="outlined"
             onClick={this.beginEdit}
