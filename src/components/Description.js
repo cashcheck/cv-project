@@ -7,8 +7,7 @@ class Description extends Component {
   constructor() {
     super();
     this.state = {
-      current:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel magna eu velit tincidunt blandit in sed tortor. Fusce aliquam fringilla nunc, in bibendum risus. Pellentesque et vulputate lacus. In at suscipit nibh. Curabitur nisi augue, luctus eu turpis at, aliquam sollicitudin quam.",
+      current: `My name is Kvothe, pronounced nearly the same as "quothe." I have stolen princesses back from sleeping barrow kings. I burned down the town of Trebon. I have spent the night with Felurian and left with both my sanity and my life. I was expelled from the University at a younger age than most people are allowed in. I tread paths by moonlight that others fear to speak of during day. I have talked to Gods, loved women, and written songs that make the minstrels weep.`,
       next: "",
     };
 

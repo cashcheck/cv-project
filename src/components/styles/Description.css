@@ -28,12 +28,7 @@
 form {
   margin: auto;
   width: 80%;
-  height: 3rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-Button {
-  width: 4rem;
 }

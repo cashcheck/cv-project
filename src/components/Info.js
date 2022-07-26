@@ -41,7 +41,7 @@ class Info extends Component {
           <input
             onChange={this.handleChange}
             placeholder={this.props.type}
-            className="info-input"
+            className="info-input info"
           ></input>
           <Button type="submit" variant="outlined">
             FINISH

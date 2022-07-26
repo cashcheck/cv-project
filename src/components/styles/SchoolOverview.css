@@ -1,0 +1,35 @@
+#all-schools {
+  margin-bottom: 25px;
+}
+
+.school-info {
+  margin-top: 15px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-info > h6 {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+.school-info > p {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: red;
+}

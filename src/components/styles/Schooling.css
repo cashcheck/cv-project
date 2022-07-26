@@ -1,0 +1,25 @@
+#Schooling {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+#Schooling > h4 {
+  font-size: 2rem;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.inactive {
+  display: none;
+}
+
+#add-school-form {
+  width: 50%;
+  margin-top: 50px;
+}
+
+#form-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}

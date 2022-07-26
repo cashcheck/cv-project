@@ -6,7 +6,7 @@ import "./styles/Name.css";
 class Name extends Component {
   constructor() {
     super();
-    this.state = { current: "fistName lastName", next: "" };
+    this.state = { current: "Kvothe, Son of Arliden", next: "" };
 
     this.handleChange = this.handleChange.bind(this);
     this.beginEdit = this.beginEdit.bind(this);
